@@ -19,6 +19,6 @@ public class AirEnemy : Enemy
 
     public override void move()
     {
-        
+
     }
 }

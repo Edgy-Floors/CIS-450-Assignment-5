@@ -26,4 +26,17 @@ public abstract class Enemy : MonoBehaviour
         p.text = text;
         a.text = attackText;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("player"))
+        {
+            attack();
+        }
+    }
+
+    private void Update()
+    {
+        move();
+    }
 }
